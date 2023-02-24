@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+#bg{
+    width: 100vw;
+    height: 100vh;
+    background-image:  url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media (max-width: 768px) {
+    #bg {background-image: none;}
+} 
+#centralizar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+#centro{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    width: 300px;
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    border-radius: 20px;
+}
+#img{
+    background-image: url(images/illustration-hero.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+#texts{
+    padding: 20px 40px 0px 40px;
+    text-align: center;
+}
+#texts p{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+}
+#texts h1{
+    font-size: 20px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+#planMusic{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    margin: 20px 50px 0 50px;
+    padding: 15px;
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+#planMusic button{
+    font-size: 10px;
+    font-weight: 900;
+    color:  hsl(245, 75%, 52%);
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#planMusic button:hover{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none ;
+}
+#planMusic img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+#textPlan{
+    margin-right: 60px;
+}
+#textPlan h1{
+    font-size: 10px;
+    font-weight: 900;
+    margin: 0;
+}
+#textPlan h2{
+    margin: 3px 0;
+    font-weight: 500;
+    font-size: 10px;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+.bt {
+    width: 240px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: 0;
+    font-weight: 900;
+    font-size: 11px;
+}
+#btBuy{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 2px 10px 2px hsla(224, 23%, 55%, 0.13);
+}
+#btBuy:hover{
+    background-color: hsla(245, 75%, 52%, 0.671);
+}
+#btSell{
+    margin: 15px 0 20px 0;
+    background-color: white;
+    color:hsl(224, 23%, 55%) ;
+}
+#btSell:hover{
+    color: black ;
+}
